@@ -27,7 +27,7 @@ public class CIS129_assignment6_alexanderAnthis {
         int hotDogsRequired = getHotDogsRequired(numberOfPeople, hotDogsPerPerson);
         
         int hotDogPackagesRequired = getHotDogPackagesRequired(hotDogsRequired, HOT_DOG_PACK_SIZE);
-        int extraHotDogs;
+        int extraHotDogs = getExtraHotDogCount(hotDogsRequired, HOT_DOG_PACK_SIZE);
 
         int bunPackagesRequired;
         int extraBuns;
@@ -84,6 +84,16 @@ public class CIS129_assignment6_alexanderAnthis {
  */
     public static int getHotDogPackagesRequired(int hotDogsRequired, final int HOT_DOG_PACK_SIZE) {
         return hotDogsRequired / HOT_DOG_PACK_SIZE;
+    }
+
+/**
+ * 
+ * @param hotDogsRequired
+ * @param HOT_DOG_PACK_SIZE
+ * @return extraHotDogs
+ */
+    public static int getExtraHotDogCount(int hotDogsRequired, final int HOT_DOG_PACK_SIZE) {
+        return hotDogsRequired % HOT_DOG_PACK_SIZE;
     }
 
 /**
