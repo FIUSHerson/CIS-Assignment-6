@@ -30,7 +30,7 @@ public class CIS129_assignment6_alexanderAnthis {
         int extraHotDogs = getExtraHotDogCount(hotDogsRequired, HOT_DOG_PACK_SIZE);
 
         int bunPackagesRequired = getBunPackagesRequired(hotDogsRequired, BUN_PACK_SIZE);
-        int extraBuns;
+        int extraBuns = getExtraBunCount(hotDogsRequired, BUN_PACK_SIZE);
 
         // Output
         displayResults(hotDogsRequired, hotDogPackagesRequired, extraHotDogs, bunPackagesRequired, extraBuns);
@@ -41,13 +41,13 @@ public class CIS129_assignment6_alexanderAnthis {
  * @param text
  */
     public static void printNorm(String text) {
-        System.err.println("[ ] " + text);
+        System.out.println("[ ] " + text);
     }
     public static void printWarn(String text) {
-        System.err.println("[*] " + text);
+        System.out.println("[*] " + text);
     }
     public static void printCrit(String text) {
-        System.err.println("[!] " + text);
+        System.out.println("[!] " + text);
     }
 
 /**
@@ -104,6 +104,16 @@ public class CIS129_assignment6_alexanderAnthis {
  */
     public static int getBunPackagesRequired(int hotDogsRequired, final int BUN_PACK_SIZE) {
         return hotDogsRequired / BUN_PACK_SIZE;
+    }
+
+/**
+ * Returns the extra bun count
+ * @param hotDogsRequired
+ * @param BUN_PACK_SIZE
+ * @return
+ */
+    public static int getExtraBunCount(int hotDogsRequired, final int BUN_PACK_SIZE) {
+        return hotDogsRequired % BUN_PACK_SIZE;
     }
 
 /**
