@@ -22,6 +22,7 @@ public class CIS129_assignment6_alexanderAnthis {
         // Input
         int numberOfPeople = getInteger("How many people are attending? : ");
         int hotDogsPerPerson = getInteger("How many hot dogs can each person have? : ");
+        printNorm("");
 
         // Processing
         int hotDogsRequired = getHotDogsRequired(numberOfPeople, hotDogsPerPerson);
@@ -125,9 +126,20 @@ public class CIS129_assignment6_alexanderAnthis {
      * @param extraBuns
      */
     public static void displayResults(int hotDogsRequired, int hotDogPackagesRequired, int extraHotDogs, int bunPackagesRequired, int extraBuns) {
+        printNorm("==================================================");
+        printNorm("");
         printNorm("Here are the results...");
         printNorm("");
-        
+        printNorm("Number of hot dogs required: " + hotDogsRequired);
+        printNorm("Number of hot dog packages required: " + hotDogPackagesRequired);
+        printNorm("");
+        printNorm("Number of buns required: " + hotDogsRequired);
+        printNorm("Number of bun packages required: " + bunPackagesRequired);
+        printNorm("");
+        printNorm("Number of extra hot dogs: " + extraHotDogs);
+        printNorm("Number of extra buns: " + extraBuns);
+        printNorm("");
+        printNorm("==================================================");
     }
     
     /**
