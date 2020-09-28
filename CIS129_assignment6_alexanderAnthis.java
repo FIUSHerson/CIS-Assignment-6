@@ -152,7 +152,7 @@ public class CIS129_assignment6_alexanderAnthis {
     * @return User input
     */
     public static int getInteger(String msg) {
-        System.err.print("[?] " + msg);
+        System.out.print("[?] " + msg);
         return keyboard.nextInt();
     }
 }
