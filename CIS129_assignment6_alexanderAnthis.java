@@ -87,7 +87,7 @@ public class CIS129_assignment6_alexanderAnthis {
     }
 
 /**
- * 
+ * Returns the extra hot dog count
  * @param hotDogsRequired
  * @param HOT_DOG_PACK_SIZE
  * @return extraHotDogs
