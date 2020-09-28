@@ -70,7 +70,7 @@ public class CIS129_assignment6_alexanderAnthis {
  * Returns the amount of hot dogs required
  * @param numberOfPeople
  * @param hotDogsPerPerson
- * @return 
+ * @return hotDogsRequired
  */
     public static int getHotDogsRequired(int numberOfPeople, int hotDogsPerPerson) {
         return numberOfPeople * hotDogsPerPerson;
@@ -80,7 +80,7 @@ public class CIS129_assignment6_alexanderAnthis {
  * Returns the amount of hot dog packages required
  * @param hotDogsRequired
  * @param HOT_DOG_PACK_SIZE
- * @return
+ * @return hotDogPackagesRequired
  */
     public static int getHotDogPackagesRequired(int hotDogsRequired, final int HOT_DOG_PACK_SIZE) {
         return hotDogsRequired / HOT_DOG_PACK_SIZE;
@@ -103,7 +103,7 @@ public class CIS129_assignment6_alexanderAnthis {
 /**
  * Prompt the user for an integer input and return the value
  * @param msg
- * @return
+ * @return User input
  */
     public static int getInteger(String msg) {
         System.err.print("[?] " + msg);
