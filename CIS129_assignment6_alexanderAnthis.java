@@ -114,7 +114,7 @@ public class CIS129_assignment6_alexanderAnthis {
      * Returns the extra bun count
      * @param hotDogsRequired
      * @param BUN_PACK_SIZE
-     * @return
+     * @return extraBuns
      */
     public static int getExtraBunCount(int bunPackagesRequired, int BUN_PACK_SIZE,
             final int hotDogsRequired) {
