@@ -36,10 +36,10 @@ public class CIS129_assignment6_alexanderAnthis {
         displayResults(hotDogsRequired, hotDogPackagesRequired, extraHotDogs, bunPackagesRequired, extraBuns);
     }
 
-/**
- * Fancy print functions with useful indicators
- * @param text
- */
+    /**
+     * Fancy print functions with useful indicators
+     * @param text
+     */
     public static void printNorm(String text) {
         System.out.println("[ ] " + text);
     }
@@ -50,11 +50,11 @@ public class CIS129_assignment6_alexanderAnthis {
         System.out.println("[!] " + text);
     }
 
-/**
- * Script to display a welcome message
- * @param HOT_DOG_PACK_SIZE
- * @param BUN_PACK_SIZE
- */
+    /**
+     * Script to display a welcome message
+     * @param HOT_DOG_PACK_SIZE
+     * @param BUN_PACK_SIZE
+     */
     public static void displayWelcome(final int HOT_DOG_PACK_SIZE, final int BUN_PACK_SIZE) {
         printNorm("");
         printNorm("Welcome to the Hot Dog Cookout Calculator!");
@@ -66,75 +66,75 @@ public class CIS129_assignment6_alexanderAnthis {
         printNorm("");
     }
 
-/**
- * Returns the amount of hot dogs required
- * @param numberOfPeople
- * @param hotDogsPerPerson
- * @return hotDogsRequired
- */
+    /**
+     * Returns the amount of hot dogs required
+     * @param numberOfPeople
+     * @param hotDogsPerPerson
+     * @return hotDogsRequired
+     */
     public static int getHotDogsRequired(int numberOfPeople, int hotDogsPerPerson) {
         return numberOfPeople * hotDogsPerPerson;
     }
 
-/**
- * Returns the amount of hot dog packages required
- * @param hotDogsRequired
- * @param HOT_DOG_PACK_SIZE
- * @return hotDogPackagesRequired
- */
+    /**
+     * Returns the amount of hot dog packages required
+     * @param hotDogsRequired
+     * @param HOT_DOG_PACK_SIZE
+     * @return hotDogPackagesRequired
+     */
     public static int getHotDogPackagesRequired(int hotDogsRequired, final int HOT_DOG_PACK_SIZE) {
         return hotDogsRequired / HOT_DOG_PACK_SIZE;
     }
 
-/**
- * Returns the extra hot dog count
- * @param hotDogsRequired
- * @param HOT_DOG_PACK_SIZE
- * @return extraHotDogs
- */
+    /**
+     * Returns the extra hot dog count
+     * @param hotDogsRequired
+     * @param HOT_DOG_PACK_SIZE
+     * @return extraHotDogs
+     */
     public static int getExtraHotDogCount(int hotDogsRequired, final int HOT_DOG_PACK_SIZE) {
         return hotDogsRequired % HOT_DOG_PACK_SIZE;
     }
 
-/**
- * Gets the amount of hot dog bun packages required
- * @param hotDogsRequired
- * @param BUN_PACK_SIZE
- * @return bunPackagesRequired
- */
+    /**
+     * Gets the amount of hot dog bun packages required
+     * @param hotDogsRequired
+     * @param BUN_PACK_SIZE
+     * @return bunPackagesRequired
+     */
     public static int getBunPackagesRequired(int hotDogsRequired, final int BUN_PACK_SIZE) {
         return hotDogsRequired / BUN_PACK_SIZE;
     }
 
-/**
- * Returns the extra bun count
- * @param hotDogsRequired
- * @param BUN_PACK_SIZE
- * @return
- */
+    /**
+     * Returns the extra bun count
+     * @param hotDogsRequired
+     * @param BUN_PACK_SIZE
+     * @return
+     */
     public static int getExtraBunCount(int hotDogsRequired, final int BUN_PACK_SIZE) {
         return hotDogsRequired % BUN_PACK_SIZE;
     }
 
-/**
- * This function displays the results of all the calculations to the user
- * @param hotDogsRequired
- * @param hotDogPackagesRequired
- * @param extraHotDogs
- * @param bunPackagesRequired
- * @param extraBuns
- */
+    /**
+     * This function displays the results of all the calculations to the user
+     * @param hotDogsRequired
+     * @param hotDogPackagesRequired
+     * @param extraHotDogs
+     * @param bunPackagesRequired
+     * @param extraBuns
+     */
     public static void displayResults(int hotDogsRequired, int hotDogPackagesRequired, int extraHotDogs, int bunPackagesRequired, int extraBuns) {
         printNorm("Here are the results...");
         printNorm("");
         
     }
-
-/**
- * Prompt the user for an integer input and return the value
- * @param msg
- * @return User input
- */
+    
+    /**
+     * Prompt the user for an integer input and return the value
+    * @param msg
+    * @return User input
+    */
     public static int getInteger(String msg) {
         System.err.print("[?] " + msg);
         return keyboard.nextInt();
