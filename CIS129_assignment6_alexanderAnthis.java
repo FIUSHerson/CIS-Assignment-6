@@ -1,0 +1,92 @@
+/*******************************************************************************************************************
+* Chapter 3, Exercise 11
+* Author: Alexander Anthis
+* CIS 129 - Programming and Problem Solving I 
+******************************************************************************************************************/
+
+import java.util.*;
+
+/**
+ * CIS129_assignment6.1_alexanderAnthis
+ */
+public class CIS129_assignment6_alexanderAnthis {
+
+    static Scanner keyboard = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        final int HOT_DOG_PACK_SIZE = 10;
+        final int BUN_PACK_SIZE = 8;
+
+        displayWelcome(HOT_DOG_PACK_SIZE, BUN_PACK_SIZE);
+
+        // Input
+        int numberOfPeople = getInteger("How many people are attending? : ");
+        int hotDogsPerPerson = getInteger("How many hot dogs can each person have? : ");
+
+        // Processing
+        int hotDogsRequired;
+        
+        int hotDogPackagesRequired;
+        int extraHotDogs;
+
+        int bunPackagesRequired;
+        int extraBuns;
+
+        // Output
+        displayResults(hotDogsRequired, hotDogPackagesRequired, extraHotDogs, bunPackagesRequired, extraBuns);
+    }
+
+/**
+ * Fancy print functions with useful indicators
+ * @param text
+ */
+    public static void printNorm(String text) {
+        System.err.println("[ ] " + text);
+    }
+    public static void printWarn(String text) {
+        System.err.println("[*] " + text);
+    }
+    public static void printCrit(String text) {
+        System.err.println("[!] " + text);
+    }
+
+/**
+ * Script to display a welcome message
+ * @param HOT_DOG_PACK_SIZE
+ * @param BUN_PACK_SIZE
+ */
+    public static void displayWelcome(int HOT_DOG_PACK_SIZE, int BUN_PACK_SIZE) {
+        printNorm("");
+        printNorm("Welcome to the Hot Dog Cookout Calculator!");
+        printNorm("This program will give you the optimal amount of resources you need.");
+        printNorm("");
+        printNorm(String.format("By default, the hot dog pack size is %s, and the bun size is %s.", HOT_DOG_PACK_SIZE, BUN_PACK_SIZE));
+        printNorm("");
+        printNorm("Let's get started.");
+        printNorm("");
+    }
+
+/**
+ * This function displays the results of all the calculations to the user
+ * @param hotDogsRequired
+ * @param hotDogPackagesRequired
+ * @param extraHotDogs
+ * @param bunPackagesRequired
+ * @param extraBuns
+ */
+    public static void displayResults(int hotDogsRequired, int hotDogPackagesRequired, int extraHotDogs, int bunPackagesRequired, int extraBuns) {
+        printNorm("Here are the results...");
+        printNorm("");
+        
+    }
+
+/**
+ * Prompt the user for an integer input and return the value
+ * @param msg
+ * @return
+ */
+    public static int getInteger(String msg) {
+        System.err.print("[?] " + msg);
+        return keyboard.nextInt();
+    }
+}
