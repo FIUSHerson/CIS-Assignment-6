@@ -150,20 +150,20 @@ public class CIS129_assignment6_alexanderAnthis {
         int bunPackagesRequired,
         int extraBuns) {
 
-        printNorm("==================================================");
+        printNorm("=========================================");
         printNorm("");
         printNorm("Here are the results...");
         printNorm("");
-        printNorm("Number of hot dogs required: " + hotDogsRequired);
-        printNorm("Number of hot dog packages required: " + hotDogPackagesRequired);
+        printWarn("Number of hot dogs required: " + hotDogsRequired);
+        printWarn("Number of hot dog packages required: " + hotDogPackagesRequired);
+        printWarn("");
+        printWarn("Number of buns required: " + hotDogsRequired);
+        printWarn("Number of bun packages required: " + bunPackagesRequired);
+        printWarn("");
+        printWarn("Number of extra hot dogs: " + extraHotDogs);
+        printWarn("Number of extra buns: " + extraBuns);
         printNorm("");
-        printNorm("Number of buns required: " + hotDogsRequired);
-        printNorm("Number of bun packages required: " + bunPackagesRequired);
-        printNorm("");
-        printNorm("Number of extra hot dogs: " + extraHotDogs);
-        printNorm("Number of extra buns: " + extraBuns);
-        printNorm("");
-        printNorm("==================================================");
+        printNorm("=========================================");
     }
     
     /**
