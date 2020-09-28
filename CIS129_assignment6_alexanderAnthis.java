@@ -143,7 +143,7 @@ public class CIS129_assignment6_alexanderAnthis {
     }
     
     /**
-     * Prompt the user for an integer input and return the value
+    * Prompt the user for an integer input and return the value
     * @param msg
     * @return User input
     */
