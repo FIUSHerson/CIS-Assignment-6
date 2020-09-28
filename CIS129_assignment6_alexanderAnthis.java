@@ -105,8 +105,8 @@ public class CIS129_assignment6_alexanderAnthis {
      * @param hotDogPackagesRequired
      * @return extraHotDogs
      */
-    public static int getExtraHotDogCount(int hotDogPackagesRequired, int HOT_DOG_PACK_SIZE,
-            final int hotDogsRequired) {
+    public static int getExtraHotDogCount(int hotDogPackagesRequired, final int HOT_DOG_PACK_SIZE,
+            int hotDogsRequired) {
         return (hotDogPackagesRequired * HOT_DOG_PACK_SIZE) - hotDogsRequired;
     }
 
@@ -126,8 +126,8 @@ public class CIS129_assignment6_alexanderAnthis {
      * @param BUN_PACK_SIZE
      * @return extraBuns
      */
-    public static int getExtraBunCount(int bunPackagesRequired, int BUN_PACK_SIZE,
-            final int hotDogsRequired) {
+    public static int getExtraBunCount(int bunPackagesRequired, final int BUN_PACK_SIZE,
+            int hotDogsRequired) {
         return (bunPackagesRequired * BUN_PACK_SIZE) - hotDogsRequired;
     }
 
