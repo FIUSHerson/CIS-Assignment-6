@@ -24,7 +24,7 @@ public class CIS129_assignment6_alexanderAnthis {
         int hotDogsPerPerson = getInteger("How many hot dogs can each person have? : ");
 
         // Processing
-        int hotDogsRequired;
+        int hotDogsRequired = getHotDogsRequired(numberOfPeople, hotDogsPerPerson);
         
         int hotDogPackagesRequired;
         int extraHotDogs;
@@ -64,6 +64,16 @@ public class CIS129_assignment6_alexanderAnthis {
         printNorm("");
         printNorm("Let's get started.");
         printNorm("");
+    }
+
+/**
+ * Returns the amount of hot dogs required
+ * @param numberOfPeople
+ * @param hotDogsPerPerson
+ * @return
+ */
+    public static int getHotDogsRequired(int numberOfPeople, int hotDogsPerPerson) {
+        return numberOfPeople * hotDogsPerPerson;
     }
 
 /**
