@@ -28,10 +28,10 @@ public class CIS129_assignment6_alexanderAnthis {
         int hotDogsRequired = getHotDogsRequired(numberOfPeople, hotDogsPerPerson);
         
         int hotDogPackagesRequired = getHotDogPackagesRequired(hotDogsRequired, HOT_DOG_PACK_SIZE);
-        int extraHotDogs = getExtraHotDogCount(hotDogsRequired, hotDogPackagesRequired, HOT_DOG_PACK_SIZE);
+        int extraHotDogs = getExtraHotDogCount(hotDogPackagesRequired, HOT_DOG_PACK_SIZE, hotDogsRequired);
 
         int bunPackagesRequired = getBunPackagesRequired(hotDogsRequired, BUN_PACK_SIZE);
-        int extraBuns = getExtraBunCount(hotDogsRequired, bunPackagesRequired, BUN_PACK_SIZE);
+        int extraBuns = getExtraBunCount(bunPackagesRequired, BUN_PACK_SIZE, hotDogsRequired);
 
         // Output
         displayResults(hotDogsRequired, hotDogPackagesRequired, extraHotDogs, bunPackagesRequired, extraBuns);
@@ -95,8 +95,8 @@ public class CIS129_assignment6_alexanderAnthis {
      * @param hotDogPackagesRequired
      * @return extraHotDogs
      */
-    public static int getExtraHotDogCount(int hotDogsRequired, int hotDogPackagesRequired,
-            final int HOT_DOG_PACK_SIZE) {
+    public static int getExtraHotDogCount(int hotDogPackagesRequired, int HOT_DOG_PACK_SIZE,
+            final int hotDogsRequired) {
         return (hotDogPackagesRequired * HOT_DOG_PACK_SIZE) - hotDogsRequired;
     }
 
@@ -116,8 +116,8 @@ public class CIS129_assignment6_alexanderAnthis {
      * @param BUN_PACK_SIZE
      * @return
      */
-    public static int getExtraBunCount(int hotDogsRequired, int bunPackagesRequired,
-            final int BUN_PACK_SIZE) {
+    public static int getExtraBunCount(int bunPackagesRequired, int BUN_PACK_SIZE,
+            final int hotDogsRequired) {
         return (bunPackagesRequired * BUN_PACK_SIZE) - hotDogsRequired;
     }
 
