@@ -147,10 +147,10 @@ public class CIS129_assignment6_alexanderAnthis {
     }
     
     /**
-    * Prompt the user for an integer input and return the value
-    * @param msg
-    * @return User input
-    */
+     * Prompt the user for an integer input and return the value
+     * @param msg
+     * @return User input
+     */
     public static int getInteger(String msg) {
         System.out.print("[?] " + msg);
         return keyboard.nextInt();
