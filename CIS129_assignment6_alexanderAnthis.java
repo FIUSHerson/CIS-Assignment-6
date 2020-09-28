@@ -71,7 +71,7 @@ public class CIS129_assignment6_alexanderAnthis {
         printNorm("Welcome to the Hot Dog Cookout Calculator!");
         printNorm("This program will give you the optimal amount of resources you need.");
         printNorm("");
-        printNorm(String.format("By default, the hot dog pack size is %s, and the bun size is %s.", HOT_DOG_PACK_SIZE, BUN_PACK_SIZE));
+        printNorm(String.format("By default, the hot dog pack size is %s, and the bun pack size is %s.", HOT_DOG_PACK_SIZE, BUN_PACK_SIZE));
         printNorm("");
         printNorm("Let's get started.");
         printNorm("");
