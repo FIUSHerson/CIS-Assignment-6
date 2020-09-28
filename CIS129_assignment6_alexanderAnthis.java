@@ -34,7 +34,17 @@ public class CIS129_assignment6_alexanderAnthis {
         int extraBuns = getExtraBunCount(bunPackagesRequired, BUN_PACK_SIZE, hotDogsRequired);
 
         // Output
-        displayResults(hotDogsRequired, hotDogPackagesRequired, extraHotDogs, bunPackagesRequired, extraBuns);
+        displayResults(
+            hotDogsRequired,
+            hotDogPackagesRequired,
+            extraHotDogs,
+            bunPackagesRequired,
+            extraBuns
+            /**
+             * Since there are a lot of parameters,
+             * they have been separated to multiple lines.
+             */
+            );
     }
 
     /**
@@ -129,7 +139,17 @@ public class CIS129_assignment6_alexanderAnthis {
      * @param bunPackagesRequired
      * @param extraBuns
      */
-    public static void displayResults(int hotDogsRequired, int hotDogPackagesRequired, int extraHotDogs, int bunPackagesRequired, int extraBuns) {
+    public static void displayResults(
+        /**
+         * Since there are a lot of parameters,
+         * they have been separated to multiple lines.
+         */
+        int hotDogsRequired,
+        int hotDogPackagesRequired,
+        int extraHotDogs,
+        int bunPackagesRequired,
+        int extraBuns) {
+
         printNorm("==================================================");
         printNorm("");
         printNorm("Here are the results...");
