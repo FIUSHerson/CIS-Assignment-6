@@ -26,7 +26,7 @@ public class CIS129_assignment6_alexanderAnthis {
         // Processing
         int hotDogsRequired = getHotDogsRequired(numberOfPeople, hotDogsPerPerson);
         
-        int hotDogPackagesRequired;
+        int hotDogPackagesRequired = getHotDogPackagesRequired(hotDogsRequired, HOT_DOG_PACK_SIZE);
         int extraHotDogs;
 
         int bunPackagesRequired;
@@ -55,7 +55,7 @@ public class CIS129_assignment6_alexanderAnthis {
  * @param HOT_DOG_PACK_SIZE
  * @param BUN_PACK_SIZE
  */
-    public static void displayWelcome(int HOT_DOG_PACK_SIZE, int BUN_PACK_SIZE) {
+    public static void displayWelcome(final int HOT_DOG_PACK_SIZE, final int BUN_PACK_SIZE) {
         printNorm("");
         printNorm("Welcome to the Hot Dog Cookout Calculator!");
         printNorm("This program will give you the optimal amount of resources you need.");
@@ -70,10 +70,20 @@ public class CIS129_assignment6_alexanderAnthis {
  * Returns the amount of hot dogs required
  * @param numberOfPeople
  * @param hotDogsPerPerson
- * @return
+ * @return 
  */
     public static int getHotDogsRequired(int numberOfPeople, int hotDogsPerPerson) {
         return numberOfPeople * hotDogsPerPerson;
+    }
+
+/**
+ * Returns the amount of hot dog packages required
+ * @param hotDogsRequired
+ * @param HOT_DOG_PACK_SIZE
+ * @return
+ */
+    public static int getHotDogPackagesRequired(int hotDogsRequired, final int HOT_DOG_PACK_SIZE) {
+        return hotDogsRequired / HOT_DOG_PACK_SIZE;
     }
 
 /**
