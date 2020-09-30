@@ -13,6 +13,12 @@ public class CIS129_assignment6_alexanderAnthis {
 
     static Scanner keyboard = new Scanner(System.in);
 
+    /***************************************************
+     *                                                 *
+     *                  Main method                    *
+     *                                                 *
+     **************************************************/
+
     public static void main(String[] args) {
         final int HOT_DOG_PACK_SIZE = 10;
         final int BUN_PACK_SIZE = 8;
@@ -46,6 +52,12 @@ public class CIS129_assignment6_alexanderAnthis {
              */
             );
     }
+
+    /***************************************************
+     *                                                 *
+     *           Goodie good'ol functions              *
+     *                                                 *
+     **************************************************/
 
     /**
      * Fancy print functions with useful indicators
